@@ -4,7 +4,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/alae-bajoudi-a5a199281"><img src="https://img.shields.io/badge/LinkedIn-Alae%20Bajoudi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:alaebajoudi128@gmail.com"><img src="https://img.shields.io/badge/Email-alaebajoudi128%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <img src="https://img.shields.io/badge/Open%20to-Internship%20in%20·%202027-2EA44F?style=for-the-badge" alt="Open to internship"/>
+  <img src="https://img.shields.io/badge/Open%20to-Internship%20·%202027-2EA44F?style=for-the-badge" alt="Open to internship"/>
 </p>
 
 ---
