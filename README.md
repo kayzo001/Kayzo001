@@ -16,7 +16,7 @@ I'm a Master's student in **Artificial Intelligence and Connected Objects** at I
 - 🔭 Currently: M2 in AI & Connected Objects
 - 🌱 Focus: deep learning, computer vision, generative AI, LLM apps and RAG
 - 🛠️ I like projects that ship: clean data pipelines, honest evaluation, and a usable interface on top
-- ⚡ Vibe coding is fun when you can troubleshoot: I build fast with AI coding tools, then read the code, debug what breaks and check the results with tests and evals
+- ⚡ Vibe coding is fun when you understand what you made
 - 🏭 Industry experience: embedded electronics internship at **Nexteer Automotive** (automotive steering systems)
 - 📍 Based in Kénitra, Morocco · 🗣️ French (fluent) · English (fluent) · Arabic (native)
 
@@ -122,15 +122,6 @@ A full-stack, consent-aware campaign manager for X (Twitter), built on the offic
 | 2025 – 2027 | **Master's**, Artificial Intelligence and Connected Objects | Ibn Tofail University, Kénitra |
 | 2024 – 2025 | **Licence d'Excellence** (Bachelor's), Artificial Intelligence | Ibn Tofail University, Kénitra |
 | 2021 – 2024 | **DUT**, Embedded Electronic Systems | Ibn Tofail University, Kénitra |
-
----
-
-## 📊 GitHub stats
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=kayzo001&show_icons=true&hide_border=true&count_private=true" alt="GitHub stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kayzo001&layout=compact&hide_border=true" alt="Top languages"/>
-</p>
 
 ---
 
