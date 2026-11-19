@@ -14,14 +14,37 @@
 I'm a Master's student in **Artificial Intelligence and Connected Objects** at Ibn Tofail University (Kénitra). My path started in **embedded electronics** and moved into **AI**. That gives me a mix that is useful for real-world AI systems: I understand the hardware, and I build models that go from raw data all the way to a deployed app.
 
 - 🔭 Currently: M2 in AI & Connected Objects
-- 🌱 Focus: deep learning, computer vision, generative AI
+- 🌱 Focus: deep learning, computer vision, generative AI, LLM apps and RAG
 - 🛠️ I like projects that ship: clean data pipelines, honest evaluation, and a usable interface on top
+- ⚡ Vibe coding is fun when you can troubleshoot: I build fast with AI coding tools, then read the code, debug what breaks and check the results with tests and evals
 - 🏭 Industry experience: embedded electronics internship at **Nexteer Automotive** (automotive steering systems)
 - 📍 Based in Kénitra, Morocco · 🗣️ French (fluent) · English (fluent) · Arabic (native)
 
 ---
 
 ## 🚀 Featured projects
+
+### 📜 [Teyvat Lorekeeper](https://github.com/kayzo001/teyvat-lorekeeper)
+
+A local RAG assistant for Genshin Impact lore: ask about the Archons, characters and history of Teyvat and get an answer with citations to the wiki sections it came from. Runs fully offline and free.
+
+- **Data:** 3,520 lore pages pulled from the Fandom wiki through the MediaWiki API, cleaned with mwparserfromhell into 21,958 section chunks
+- **Retrieval:** hybrid search, BM25 + dense embeddings (bge-small in ChromaDB) fused with reciprocal rank fusion, plus an optional cross-encoder reranker. **Recall@5 0.97** on a 43-question eval
+- **Generation:** a local LLM through Ollama that cites every claim as `[n]` and refuses when the wiki doesn't cover the question. **qwen3.5:4b** beat **llama3.2:3b** on correct answers (82% vs 55%) and correct citations (89% vs 37%)
+- **Debugging:** traced a hallucination ("who is the Cryo Archon?") to a gap in the data rather than the prompt, and fixed it at the data layer
+- **App:** FastAPI streaming API and web UI, a CLI, Docker Compose with Ollama, 65 tests and CI
+
+`Python` `Ollama` `FastAPI` `ChromaDB` `sentence-transformers` `BM25` `Docker` `pytest`
+
+### 🧊 [SpatialForge](https://github.com/kayzo001/spatialforge)
+
+Turns 20 to 150 ordinary photos into an interactive 3D scene you can explore in the browser.
+
+- Camera poses and sparse geometry from real Structure-from-Motion (COLMAP), then point-cloud refinement with Open3D
+- Optional 3D Gaussian Splatting training (Nerfstudio Splatfacto, on GPU or Colab), evaluated with PSNR, SSIM and LPIPS
+- FastAPI backend with a job queue and live progress over SSE, and a React + TypeScript + three.js viewer; the geometric pipeline runs on a laptop CPU
+
+`Python` `COLMAP` `Open3D` `Gaussian Splatting` `FastAPI` `React` `three.js`
 
 ### 🎮 [League of Legends Esports Win Predictor](https://github.com/kayzo001/league-of-legends-e-sports-game-predictor)
 
@@ -60,9 +83,19 @@ A full-stack, consent-aware campaign manager for X (Twitter), built on the offic
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
+**LLMs & RAG**
+
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6446?style=flat-square)
+![RAG](https://img.shields.io/badge/RAG-hybrid%20search-6E40C9?style=flat-square)
+
 **Apps & deployment**
 
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![three.js](https://img.shields.io/badge/three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
